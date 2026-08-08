@@ -1,7 +1,7 @@
 # 🕵️‍♂️ Miniguia de Estudos: O Universo de Sherlock Holmes com NotebookLM
 
 Repositório desenvolvido como parte do desafio prático da **DIO**, aplicando Inteligência Artificial (NotebookLM) como ferramenta de aprendizagem ativa e curadoria de conhecimento.
-
+> 🔗 **Acesso ao Notebook:** [Clique aqui para acessar o meu Caderno Temático no NotebookLM](https://notebook.google.com/notebook/b17da5d6-2642-4539-94c4-2763c95d5394)
 ---
 
 ## 🎯 Contexto e Objetivos
