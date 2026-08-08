@@ -5,7 +5,7 @@ Repositório desenvolvido como parte do desafio prático da **DIO**, aplicando I
 ---
 
 ## 🎯 Contexto e Objetivos
-* **Tema Escolhido:** O método dedutivo, a psicologia investigativa e a estrutura narrativa das obras clássicas de Sherlock Holmes criadas por Sir Arthur Conan Doyle.
+* **Tema Escolhido:** O método dedutivo, a investigação e os personagens das obras clássicas de Sherlock Holmes.
 * **Objetivo:** Utilizar o NotebookLM para centralizar obras clássicas em domínio público, extrair padrões analíticos, gerar resumos estruturados e construir um miniguia de estudos de referência rápida.
 
 ---
@@ -22,27 +22,30 @@ Para alimentar o NotebookLM, foram selecionadas 4 obras originais em domínio p�
 
 ## ⚙️ Engenharia de Prompts e "Cicatrizes" (Troubleshooting)
 
-* **Tentativa Inicial (Prompt Genérico):** 
-  > *"Resuma os casos de Sherlock Holmes."*
-  * **Dificuldade (Cicatriz):** A IA gerou respostas superficiais misturando livros originais com adaptações modernas de filmes e séries de TV, fugindo do escopo literário.
-* **Ajuste e Solução (Prompt Estruturado):** 
-  > *"Atue como um analista literário. Utilizando **estritamente** as fontes cadastradas do Project Gutenberg, explique apenas os métodos de observação e dedução lógica descritos nos textos originais de Conan Doyle."*
-  * **Resultado:** O modelo passou a entregar análises precisas, fiéis aos textos originais e livres de interferências externas.
+* **Contexto Inicial Fornecido à IA:** 
+  > *"Estou construindo um caderno temático de estudos para o portfólio da DIO com foco nas obras originais de Sherlock Holmes."*
+* **Estratégia de Prompt (Encadeamento):** Em vez de pedir um resumo geral, utilizei uma técnica de perguntas sequenciais e investigativas (*"Qual a história de origem?", "Quem foi a vítima?", "Quem era o cúmplice?"*) para forçar a IA a mergulhar profundamente nos detalhes do livro "Um Estudo em Vermelho".
+* **Resultado (Cicatriz/Aprendizado):** Percebi que fazer perguntas diretas e sequenciais sobre eventos específicos da trama evita que a IA alucine ou traga informações de filmes, mantendo a resposta focada puramente nos textos dos livros.
 
 ---
 
 ## 📖 Miniguia de Estudo (Entrega Final)
 
-### 1. Resumos Estruturados
-* **O Método de Observação:** Baseia-se na atenção meticulosa a detalhes físicos minúsculos (como marcas de lama, cinza de charuto ou vestimentas) que passam despercebidos por observadores comuns e policiais tradicionais.
-* **A Lógica Dedutiva:** Consiste em eliminar sistematicamente o impossível; o que restar, por mais improvável que pareça, deve ser a verdade.
-* **A Parceria com Watson:** Atua como um contraste analítico e um mecanismo narrativo para registrar os casos sob a perspectiva de um observador impressionado, mas racional.
+### 1. Resumos Estruturados: O Cúmplice de Jefferson Hope
+Durante a análise da obra, o NotebookLM estruturou o seguinte resumo sobre os bastidores da investigação em *Um Estudo em Vermelho*:
 
-### 2. Glossário Técnico
-* **Método Científico de Dedução:** Abordagem investigativa fundamentada em evidências empíricas e raciocínio lógico rigoroso.
-* **O "Sótão do Cérebro":** Metáfora de Holmes para a curadoria consciente da mente, armazenando apenas conhecimentos úteis à investigação e descartando dados irrelevantes.
-* **Baker Street 221B:** O endereço icônico e ponto central de partida para as investigações do detetive.
+* **A Existência do Cúmplice:** Jefferson Hope tinha um amigo em Londres que o auxiliava, descrito por Holmes como tão astuto quanto o próprio assassino. Seu nome nunca foi revelado nas fontes, mas sua atuação foi crucial.
+* **O Disfarce:** Para recuperar um anel de casamento usado como isca por Holmes em um anúncio, o cúmplice foi ao 221B disfarçado de uma velha senhora trôpega (alegando que o anel era de sua filha, Sally). O disfarce foi tão perfeito que enganou Holmes e Watson.
+* **A Fuga e Habilidades:** Após pegar o anel falso, o cúmplice despistou Holmes saltando de uma carruagem em movimento. Holmes deduziu tratar-se de um jovem ativo e ator incomparável.
+* **Lealdade:** Ao ser capturado, Hope reconheceu a astúcia do amigo, mas recusou-se a entregar seu nome, protegendo-o.
+
+### 2. Glossário Técnico e de Personagens
+* **221B Baker Street:** O endereço icônico e ponto central onde Holmes e Watson recebem clientes e armam armadilhas (como o anúncio do anel).
+* **Método de Observação:** A capacidade de deduzir a verdade, mesmo quando falha (como no caso em que o cúmplice enganou Holmes com um disfarce impecável).
+* **Jefferson Hope:** O antagonista central do primeiro romance de Holmes, impulsionado por vingança e auxiliado por comparsas habilidosos.
 
 ### 3. Prompts Reutilizáveis para Futuras Revisões
-* *"Quais são os principais traços psicológicos que definem a personalidade de Sherlock Holmes nos contos originais?"*
-* *"Liste as principais críticas que Sherlock Holmes faz aos métodos da Scotland Yard nas fontes carregadas."*
+Com base nas interações documentadas, os seguintes prompts podem ser reutilizados para estudos futuros no caderno:
+* *"Qual é a história de origem de Watson e como ocorreu seu primeiro encontro com Sherlock Holmes?"*
+* *"Como Sherlock Holmes capturou o assassino Jefferson Hope?"*
+* *"Quem foi a vítima do assassinato no 221B e quais as pistas deixadas no local?"*
